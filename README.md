@@ -1,9 +1,5 @@
 # Google Ads Performance Drivers
 
-![pipeline](https://github.com/johnbozorgi/google-ads-performance-drivers/actions/workflows/pipeline.yml/badge.svg)
-![python](https://img.shields.io/badge/python-3.10%2B-blue)
-![license](https://img.shields.io/badge/license-MIT-green)
-
 What actually moves click-through rate and conversion rate in a search
 campaign? This project answers that question with a Kaggle Google Ads
 dataset, working through cleaning, exploratory analysis, weighted regression,
