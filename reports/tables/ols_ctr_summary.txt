@@ -1,0 +1,35 @@
+                            WLS Regression Results                            
+==============================================================================
+Dep. Variable:                ctr_pct   R-squared:                       0.599
+Model:                            WLS   Adj. R-squared:                  0.598
+Method:                 Least Squares   F-statistic:                     213.9
+Date:                Fri, 12 Jun 2026   Prob (F-statistic):               0.00
+Time:                        06:35:10   Log-Likelihood:                -5366.0
+No. Observations:                3428   AIC:                         1.076e+04
+Df Residuals:                    3416   BIC:                         1.083e+04
+Df Model:                          11                                         
+Covariance Type:                  HC3                                         
+=============================================================================================================
+                                                coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------------
+Intercept                                     4.6806      0.162     28.835      0.000       4.362       4.999
+C(device, Treatment('Desktop'))[T.Mobile]     1.0970      0.047     23.144      0.000       1.004       1.190
+C(device, Treatment('Desktop'))[T.Tablet]    -0.5235      0.061     -8.553      0.000      -0.644      -0.404
+C(location)[T.Chennai]                       -0.8631      0.073    -11.747      0.000      -1.007      -0.719
+C(location)[T.Delhi]                         -0.6633      0.077     -8.598      0.000      -0.814      -0.512
+C(location)[T.Hyderabad]                     -0.3438      0.068     -5.029      0.000      -0.478      -0.210
+C(location)[T.Mumbai]                        -0.5411      0.063     -8.530      0.000      -0.665      -0.417
+C(location)[T.Pune]                          -0.7202      0.088     -8.174      0.000      -0.893      -0.548
+is_branded                                    2.1043      0.078     27.121      0.000       1.952       2.256
+keyword_word_count                           -0.1182      0.032     -3.711      0.000      -0.181      -0.056
+is_weekend                                   -0.1644      0.047     -3.470      0.001      -0.257      -0.072
+cpc                                          -0.0366      0.007     -5.054      0.000      -0.051      -0.022
+==============================================================================
+Omnibus:                      344.071   Durbin-Watson:                   1.979
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1126.804
+Skew:                          -0.499   Prob(JB):                    2.08e-245
+Kurtosis:                       5.626   Cond. No.                         104.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)

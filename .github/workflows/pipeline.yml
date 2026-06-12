@@ -1,0 +1,39 @@
+name: pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate sample data
+        run: python scripts/make_sample_data.py --rows 1500
+
+      - name: Run the full pipeline
+        run: python run_pipeline.py
+
+      - name: Check expected outputs exist
+        run: |
+          test -f data/processed/cleaned_google_ads.csv
+          test -f reports/tables/model_scores.csv
+          ls reports/figures/*.png | wc -l
+
+      - name: Upload figures
+        uses: actions/upload-artifact@v4
+        with:
+          name: figures
+          path: reports/figures/

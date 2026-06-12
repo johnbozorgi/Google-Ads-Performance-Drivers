@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Raw data is downloaded, not committed
+data/raw/*.csv
+data/processed/*.csv
+
+.DS_Store

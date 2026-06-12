@@ -1,0 +1,7 @@
+target,model,r2,rmse,mae
+CTR,Ridge,0.4513,1.0868,0.8108
+CTR,Random Forest,0.4851,1.0528,0.8015
+CTR,Gradient Boosting,0.4972,1.0404,0.7929
+CVR,Ridge,0.1343,5.4176,3.9598
+CVR,Random Forest,0.1011,5.5204,4.0466
+CVR,Gradient Boosting,0.0638,5.6337,4.1336
