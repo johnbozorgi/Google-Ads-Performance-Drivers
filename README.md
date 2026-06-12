@@ -1,6 +1,6 @@
 # Google Ads Performance Drivers
 
-![pipeline](https://github.com/USERNAME/google-ads-performance-drivers/actions/workflows/pipeline.yml/badge.svg)
+![pipeline](https://github.com/johnbozorgi/google-ads-performance-drivers/actions/workflows/pipeline.yml/badge.svg)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
